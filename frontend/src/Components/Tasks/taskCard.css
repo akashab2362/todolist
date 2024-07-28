@@ -1,0 +1,133 @@
+/* styles.css */
+
+.todo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 3vw;
+  width: 70vw;
+}
+.todo-action {
+  margin-left: 3vw;
+}
+.todo-info {
+  margin-left: 3vw;
+  flex: 1;
+}
+
+.todo-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.todo-description {
+  margin-bottom: 10px;
+}
+
+.todo-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.todo-priority {
+  font-weight: bold;
+}
+.completed{
+  text-decoration: line-through;
+}
+
+.priority-p1 {
+  color: red;
+}
+
+.priority-p2 {
+  color: orange;
+}
+
+.priority-p3 {
+  color: green;
+}
+
+.priority-p4 {
+  color: blue;
+}
+
+.todo-deadline {
+  font-style: italic;
+}
+.todo-action > button {
+  border: none;
+  background-color: white;
+}
+.delete-todo {
+  margin-right: 2vw;
+  padding-right: 2vw;
+  border-right: 1px solid black !important;
+}
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styles for input sections */
+.modal-content input[type="text"],
+.modal-content input[type="datetime-local"],
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Styles for buttons */
+.modal-content button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}

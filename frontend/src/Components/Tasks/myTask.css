@@ -1,0 +1,20 @@
+.taskContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.taskTitle{
+    margin: 4vh 0;
+    text-align: center;
+}
+.sort-cont{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 3vh;
+}
+.sort-cont > select{
+    border: 1px solid black;
+}
+.sort-cont > label{
+    margin-right: 2vw;
+}

@@ -1,0 +1,92 @@
+/* Account.css */
+
+/* Container styling */
+.profileContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileContainer > div {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .profileContainer > div:first-child {
+    max-width: 300px;
+  }
+  
+  /* Heading styling */
+  .profileContainer h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Image styling */
+  .profileContainer img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Link styling */
+  .profileContainer a {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 0.375rem;
+    background-color: black;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .profileContainer a:hover {
+    text-decoration: none;
+    background-color: rgb(22, 0, 78);
+  }
+  
+  /* Content styling */
+  .profileContainer h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .profileContainer p {
+    font-size: 18px;
+    margin-bottom: 3vh;
+    color: #555;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .profileContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profileContainer > div {
+      margin: 20px 0;
+      text-align: center;
+    }
+  
+    .profileContainer > div:first-child {
+      max-width: 100%;
+    }
+  }
+  
